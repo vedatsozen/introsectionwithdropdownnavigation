@@ -1,0 +1,292 @@
+body {
+    margin: auto;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+nav {
+    margin: auto;
+    height: 70px;
+    width:100%;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+#left {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#middle {
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+#middle ul {
+
+    word-spacing: 30px;
+
+}
+
+#right ul {
+    word-spacing: 30px;
+
+}
+
+
+ul li {
+    display: inline-block;
+
+}
+
+#middle ul li:nth-child(1)::after {
+    content: url("images/icon-arrow-down.svg");
+    margin-left: 5px;
+    
+}
+
+#middle ul li:nth-child(2)::after {
+    content: url("images/icon-arrow-down.svg");
+    margin-left: 5px;
+    
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+#register {
+    border: 1px solid hsl(0, 0%, 98%);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#register:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#right {
+
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+#collapsemenu {
+    
+    height:250px;
+    width:auto;
+    padding: 3px;
+    position: absolute;
+    top:50px;
+    left:220px;
+    border-radius: 3px;
+    text-align:center;
+    background-color: white;
+    color: hsl(0, 0%, 41%);
+    visibility: hidden;
+    
+}
+
+#collapsemenu2 {
+    
+    height:fit-content;
+    width:auto;
+    position: absolute;
+    top:50px;
+    left:400px;
+    border-radius: 3px;
+    text-align:center;
+    background-color: white;
+    color: hsl(0, 0%, 41%);
+    visibility: hidden;
+    
+}
+
+
+
+
+
+#collapsemenu ul li {
+
+    display: block;
+    height: 50px;
+    width:auto;
+    padding: 5px;
+}
+
+#collapsemenu2 ul li {
+
+    display: block;
+    height: 50px;
+    width:auto;
+    padding: 5px;
+}
+
+#collapsemenu ul li:nth-child(1)::before {
+    content: url(images/icon-todo.svg);
+    margin-right:5px;
+}
+
+#collapsemenu ul li:nth-child(2)::before {
+    content: url(images/icon-calendar.svg);
+    margin-right:5px;
+}
+
+#collapsemenu ul li:nth-child(3)::before {
+    content: url(images/icon-reminders.svg);
+    margin-right:5px;
+}
+
+#collapsemenu ul li:nth-child(4)::before {
+    content: url(images/icon-planning.svg);
+    margin-right:5px;
+}
+
+
+#container {
+    margin: auto;
+    height:500px;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+#leftcontainer {
+
+margin: auto;
+width: 50%;
+height:500px ;
+background-color: hsl(0, 0%, 98%);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: space-around;
+
+
+}
+
+
+#rightcontainer {
+
+    margin: auto;
+    width: 50%;
+    height:500px ;
+    
+    background-color: hsl(0, 0%, 98%)
+    }
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+
+    button {
+        height: 50px;
+        width:150px;
+        font-size: 15px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-family: 'Epilogue', sans-serif;
+        border: 2px solid black;
+    }
+
+    button:hover {
+        background-color: hsl(0, 0%, 98%);
+        color: black;
+        border: 2px solid black;
+    }
+    
+   
+
+  #one, #two, #three, #four {
+
+      
+      width: 100%;
+      
+  }
+
+  #one {
+    
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 30%;
+    
+
+
+
+}
+
+  #two {
+    
+    text-align: left;
+    display: flex;
+    align-items: center;
+    
+    height: 20%;
+
+}
+
+h1 {
+font-size:60px;
+}
+
+h4 {
+    margin: auto;
+    color: hsl(0, 0%, 41%);
+    font-size: 13px;
+   
+}
+
+  #three {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 20%;
+
+}
+
+  #four {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 20%;
+
+  }
+
+  #four > img {
+      height:30%;
+      width:20%;
+  }

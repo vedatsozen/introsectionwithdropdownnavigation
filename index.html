@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stil.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+<nav>
+  <div id="left"><img src="images/logo.svg"></div>
+  <div id="middle">
+    <ul>
+      <li onclick="myfunction()">Features</li>
+      <li onclick="myfunction2()">Company</li>
+      <li>Careers</li>
+      <li>About</li>
+    </ul>
+
+  </div>
+  <div id="right">
+   <ul>
+     <li>Login</li>
+     <li id="register">Register</li>
+   </ul>
+  </div>
+
+</nav>
+
+<div id="container">
+
+<div id="leftcontainer">
+  <div id="one"><h1>Make remote work</h1></div>
+  <div id="two"><h4>Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.</h4></div>
+  <div id="three"><button>Learn More</button></div>
+
+  <div id="four">
+    <img src="images/client-databiz.svg">
+    <img src="images/client-audiophile.svg">
+    <img src="images/client-meet.svg">
+    <img src="images/client-maker.svg">
+  
+  </div>
+</div>
+<div id="rightcontainer"><img src="images/image-hero-desktop.png"></div>
+
+
+</div>
+
+<div id="collapsemenu">
+  <ul>
+    <li>Todo List</li>
+    <li>Calendar</li>
+    <li>Reminders</li>
+    <li>Planning</li>
+  </ul>
+</div>
+
+<div id="collapsemenu2">
+  <ul>
+    <li>History</li>
+    <li>Our Team</li>
+    <li>Blog</li>
+    
+  </ul>
+</div>
+
+<script>
+
+
+  
+function myfunction() {
+  
+ document.getElementById("collapsemenu").style.visibility = "visible";
+
+
+}
+
+function myfunction2() {
+  
+  document.getElementById("collapsemenu2").style.visibility = "visible";
+ 
+ 
+ }
+
+
+
+</script>
+</body>
+</html>
